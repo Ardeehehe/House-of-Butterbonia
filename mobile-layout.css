@@ -1,0 +1,22 @@
+@media (max-width: 850px) {
+  .page-hero {
+    min-height: 58vh !important;
+    padding: 120px 0 65px !important;
+  }
+
+  .page-hero h1 {
+    font-size: 13vw !important;
+  }
+
+  .card {
+    padding: 25px !important;
+  }
+
+  .card h3 {
+    margin-top: 55px !important;
+  }
+
+  section {
+    padding: 70px 0 !important;
+  }
+}
