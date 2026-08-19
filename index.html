@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The House of Butterbonia — The Beauty about Exploring Professional Track</title>
+<script>if(sessionStorage.getItem('butterboniaAccess')!=='granted'){location.replace('loading.html')}</script>
+<link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="glitch.css">
+<link rel="stylesheet" href="background-asset.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+:root{--bg:#030305;--red:#ff183f;--red2:#7b001b;--white:#f5f2ef;--gray:#8b8990;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}
+a{text-decoration:none;color:inherit}.wrap{width:min(1240px,90%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;height:78px;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:0 5%;border-bottom:1px solid rgba(255,255,255,.06);background:linear-gradient(180deg,rgba(0,0,0,.78),transparent);backdrop-filter:blur(14px)}
+.logo{font:700 16px "Space Grotesk";letter-spacing:4px}.logo b{color:var(--red)}.nav{display:flex;gap:28px;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase}.nav a{position:relative;transition:color .3s ease}.nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-9px;height:1px;background:var(--red);transition:right .3s ease}.nav a:hover,.nav a.active{color:white}.nav a:hover:after,.nav a.active:after{right:0}
+.navbtn{border:1px solid #444;padding:10px 14px;font-size:9px;letter-spacing:2px;transition:border-color .3s ease,color .3s ease,transform .3s ease,box-shadow .3s ease}.navbtn:hover{border-color:var(--red);color:var(--red);transform:translateY(-2px);box-shadow:0 8px 30px rgba(255,24,63,.12)}
+.hero{height:100svh;min-height:700px;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#050507}
+.hero-bg{position:absolute;inset:0;background:
+radial-gradient(circle at 70% 42%,rgba(255,0,44,.2),transparent 27%),
+radial-gradient(circle at 40% 80%,rgba(255,0,30,.08),transparent 25%),
+linear-gradient(115deg,#020203 0%,#08080b 48%,#17030a 100%)}
+.hero-orb{position:absolute;width:46vw;height:46vw;max-width:650px;max-height:650px;border-radius:50%;right:5%;top:13%;background:radial-gradient(circle at 35% 30%,#ff4561 0,#8d001c 22%,#220008 55%,transparent 70%);filter:blur(2px);opacity:.75;box-shadow:0 0 150px rgba(255,0,45,.18)}
+.hero-lines{position:absolute;inset:0;background:linear-gradient(90deg,transparent 49.8%,rgba(255,255,255,.08) 50%,transparent 50.2%),linear-gradient(0deg,transparent 49.8%,rgba(255,255,255,.06) 50%,transparent 50.2%);background-size:120px 120px;mask-image:linear-gradient(to bottom,transparent 5%,black 45%,transparent 95%);opacity:.25}
+.hero-content{position:relative;z-index:3;padding-bottom:7vh}
+.eyebrow{font:10px "Space Grotesk";letter-spacing:4px;text-transform:uppercase;color:var(--red)}
+.hero h1{font:700 clamp(70px,12vw,170px) "Space Grotesk";letter-spacing:-.09em;line-height:.78;margin:22px 0 28px;text-transform:uppercase}
+.hero h1 .thin{font-weight:400;color:#aaa}.hero h1 .red{color:var(--red)}
+.hero-desc{max-width:510px;color:#aaa;font-size:13px;line-height:1.8}
+.hero-actions{display:flex;gap:10px;margin-top:28px}.btn{font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:14px 20px;border:1px solid #444;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}.btn.red{background:var(--red);border-color:var(--red)}.btn:hover{transform:translateY(-3px);border-color:var(--red);box-shadow:0 12px 30px rgba(255,24,63,.16)}.btn:focus-visible,.nav a:focus-visible,.navbtn:focus-visible{outline:1px solid var(--red);outline-offset:5px}
+.scroll{position:absolute;right:5%;bottom:7vh;z-index:3;writing-mode:vertical-rl;font:9px "Space Grotesk";letter-spacing:3px;color:#777}
+.scroll:after{content:"";display:inline-block;width:1px;height:65px;background:var(--red);margin-top:12px}
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;color:#777;white-space:nowrap;font:9px "Space Grotesk";letter-spacing:3px}.marquee span{color:var(--red);padding:0 35px}
+section{padding:125px 0}.intro{display:grid;grid-template-columns:.65fr 1.35fr;gap:70px}.intro h2{font:500 clamp(45px,7vw,90px) "Playfair Display";font-style:italic;line-height:.96;letter-spacing:-.06em;margin:0}.intro h2 span{color:var(--red)}.copy{color:#8e8d93;font-size:13px;line-height:1.9;max-width:620px}
+.big-image{margin-top:70px;height:650px;position:relative;overflow:hidden;border:1px solid var(--line)}.big-image img{width:100%;height:100%;object-fit:cover;filter:contrast(1.15) saturate(.75)}.big-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.45),transparent 45%,rgba(0,0,0,.2))}
+.coord{position:absolute;z-index:2;left:22px;top:20px;font:9px "Space Grotesk";letter-spacing:2px;color:#aaa}.coord b{color:var(--red)}
+.statbar{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line);border-top:1px solid var(--line)}.stat{padding:28px 20px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{font:600 35px "Space Grotesk";display:block;min-height:42px;letter-spacing:-.06em;text-shadow:0 0 18px rgba(255,24,63,.18)}.stat span{font-size:8px;letter-spacing:2px;color:#777;text-transform:uppercase}.stat.infinity-stat{display:flex;flex-direction:column;align-items:flex-start}.stat.infinity-stat .infinity-mark{display:block;font:600 35px "Space Grotesk";line-height:1;opacity:.9;animation:infinityPulse 2.2s ease-in-out infinite}.section-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:45px}.section-title h2{font:600 clamp(45px,6vw,78px) "Space Grotesk";letter-spacing:-.08em;line-height:.85;margin:10px 0 0}.section-title p{max-width:360px;color:#777;font-size:12px;line-height:1.8}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#222}.card{background:#08080a;padding:35px;min-height:290px;position:relative;transition:background .45s ease,transform .45s ease,box-shadow .45s ease}.card:nth-child(2){background:#0d0d10}.card .n{color:var(--red);font:10px "Space Grotesk";letter-spacing:2px}.card h3{font:600 24px "Space Grotesk";letter-spacing:-1px;margin:90px 0 12px}.card p{font-size:11px;color:#777;line-height:1.8}.card:after{content:"↗";position:absolute;right:25px;top:25px;color:#555;transition:color .3s ease,transform .3s ease}.card:hover{z-index:1;background:#121217;transform:translateY(-7px);box-shadow:0 18px 45px rgba(255,0,45,.12)}.card:hover:after{color:var(--red);transform:translate(3px,-3px)}
+.gallery{display:grid;grid-template-columns:1.35fr .65fr;gap:14px}.tile{height:650px;position:relative;overflow:hidden;background:#111}.tile.small{height:650px}.tile img{width:100%;height:100%;object-fit:cover;transition:1s;filter:contrast(1.12) saturate(.82)}.tile:hover img{transform:scale(1.045)}.tile:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,.9))}.label{position:absolute;z-index:2;bottom:28px;left:28px}.label small{font-size:8px;letter-spacing:3px;color:var(--red)}.label h3{font:600 28px "Space Grotesk";letter-spacing:-1px;margin:6px 0}
+.quote{padding:160px 0;text-align:center;position:relative}.quote:before{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:400px;height:400px;border-radius:50%;background:var(--red);filter:blur(180px);opacity:.12}.quote p{position:relative;font:italic 500 clamp(40px,7vw,100px) "Playfair Display";line-height:1.02;max-width:1050px;margin:auto}.quote em{color:var(--red)}
+.contact{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:90px 0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.contact h2{font:600 clamp(50px,7vw,100px) "Space Grotesk";letter-spacing:-.09em;line-height:.85;margin:15px 0}.contact p{color:#777;line-height:1.8;font-size:12px}form{display:grid;gap:10px}input,textarea{background:#09090b;border:1px solid #29292d;color:white;padding:17px;font:11px Inter;outline:0}input:focus,textarea:focus{border-color:var(--red)}textarea{height:145px;resize:vertical}button{cursor:pointer}
+footer{padding:30px 0;color:#555;font:8px "Space Grotesk";letter-spacing:2px;display:flex;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(22px);animation:up .8s ease forwards}.reveal-on-scroll{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal-on-scroll.is-visible{opacity:1;transform:none}@keyframes up{to{opacity:1;transform:none}}
+@media(max-width:850px){.nav{display:none}.hero-orb{width:80vw;height:80vw;right:-15%;top:18%}.hero h1{font-size:19vw}.scroll{display:none}.intro,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.tile,.tile.small{height:470px}.statbar{grid-template-columns:repeat(2,1fr)}section{padding:85px 0}}
+@keyframes infinityPulse{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.12);opacity:1}}
+</style>
+</head>
+<body>
+<nav>
+<a class="logo" href="index.html">HOUSE OF<b> / </b>BUTTERBONIA</a>
+<div class="nav"><a href="about.html">About the Team</a><a href="careers.html">Career Paths</a><a href="skills.html">Skills</a><a href="resources.html">Resources</a></div>
+</nav>
+
+<section class="hero">
+<div class="hero-bg"></div><div class="hero-orb"></div><div class="hero-lines"></div>
+<div class="wrap hero-content reveal">
+<div class="eyebrow">Professional Track / Collaborative Career Guide</div>
+<h1>The Beauty<br><span class="thin">about</span> <span class="red">Exploring</span><br>Professional Track.</h1>
+<p class="hero-desc">A collaborative guide to careers, skills, and opportunities in professional track.</p>
+<div class="hero-actions"><a class="btn red" href="careers.html">Explore Careers ↗</a><a class="btn" href="about.html">Start Here</a></div>
+</div>
+<div class="scroll">SCROLL TO EXPLORE</div>
+</section>
+
+<div class="marquee">ACCOUNTING <span>✦</span> MARKET ANALYST <span>✦</span> BUSINESS LEGAL MANAGEMENT <span>✦</span> ENTREPRENEURSHIP <span>✦</span> CYBER SECURITY <span>✦</span> PROFESSIONAL TRACK</div>
+
+<section id="about"><div class="wrap">
+<div class="intro reveal-on-scroll">
+<div><div class="eyebrow">01 / ABOUT THIS WEBSITE</div></div>
+<div><h2>A track is a <span>direction</span> to grow into.</h2><p class="copy">This website is a collaborative project by our group, created to showcase our chosen professional track: Accounting, Market Analyst, Business Legal Management, Entrepreneur, and Cyber Security. It provides an overview of the field, career paths, tools, and resources for students and aspiring professionals.</p></div>
+</div>
+<div class="statbar reveal-on-scroll"><div class="stat"><strong class="count-up" data-target="5">00</strong><span>Career categories</span></div><div class="stat"><strong class="count-up" data-target="6">00</strong><span>Team members</span></div><div class="stat"><strong class="count-up" data-target="3">00</strong><span>Core skill groups</span></div><div class="stat infinity-stat"><span class="infinity-mark">∞</span><span>Ways to grow</span></div></div>
+</div></section>
+
+<section id="quick-links"><div class="wrap">
+<div class="section-title"><div><div class="eyebrow">02 / QUICK LINKS</div><h2>Find your<br>next step.</h2></div><p>A “track” is just the career path we’ve chosen to focus on. It’s the professional direction we’re preparing for, and this website is a simple, shared guide to explain what our chosen field is, what skills and jobs it involves, and how to get started.</p></div>
+<div class="cards reveal-on-scroll">
+<a class="card" href="careers.html"><div class="n">01 / CAREERS</div><h3>Career Paths</h3><p>Explore the career categories chosen by the group and see how a track can grow into a profession.</p></a>
+<a class="card" href="skills.html"><div class="n">02 / SKILLS</div><h3>Skills &amp; Competencies</h3><p>See the shared skills students and professionals need across the professional track.</p></a>
+<a class="card" href="resources.html"><div class="n">03 / RESOURCES</div><h3>Resources &amp; Next Steps</h3><p>Use courses, tutorials, guides, projects, communities, and experience to start moving forward.</p></a>
+</div>
+</div></section>
+
+<section id="paths"><div class="wrap">
+<div class="section-title"><div><div class="eyebrow">03 / CAREER PATHS</div><h2>Start small.<br><span style="color:var(--red)">Grow with purpose.</span></h2></div><p>This track can lead to many different jobs. Most people start with simple, entry-level roles to learn the basics. As they gain experience, they take on more responsibility and choose a specialty. Later, they can become senior experts or team leaders. The job titles may change, but the path is the same: start small, build skills, and grow into the role that fits you.</p></div>
+</div></section>
+
+<section class="quote"><div class="wrap"><div class="eyebrow">04 / THE DIRECTION</div><p>Start small, build skills, and <em>grow</em> into the role that fits you.</p></div></section>
+
+<section id="resources" class="contact"><div class="wrap contact-grid">
+<div><div class="eyebrow">05 / RESOURCES &amp; NEXT STEPS</div><h2>KEEP<br><span style="color:var(--red)">GOING.</span></h2><p>To get started in this track, use online courses, tutorials, and free guides to learn the basic skills, and read books, blogs, or listen to podcasts from people already working in the field. Practice by doing small projects and create a simple portfolio to show what you’ve done, and you may join clubs, online groups, or local meetups to meet others and get advice.</p></div>
+<div><p class="copy">Next, look for internships, part-time jobs, or volunteer work related to the track, and keep learning as the field changes-start small, stay curious, and keep going.</p><a class="btn red" href="resources.html">View resources ↗</a></div>
+</div></section>
+<footer class="wrap"><span>THE HOUSE OF BUTTERBONIA / ABM</span><span>COLLABORATIVE CAREER GUIDE</span></footer>
+<script>
+const reveals = document.querySelectorAll('.reveal-on-scroll');
+const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+	if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+}), { threshold: .12 });
+reveals.forEach(element => observer.observe(element));
+
+const counters = document.querySelectorAll('.count-up');
+const animateCounter = (element) => {
+	const target = Number.parseInt(element.dataset.target || '0', 10);
+	if (!Number.isFinite(target)) return;
+
+	element.textContent = '00';
+	let current = 0;
+	const step = Math.max(1, Math.ceil(target / 18));
+	const interval = setInterval(() => {
+		current += step;
+		if (current >= target) {
+			current = target;
+			clearInterval(interval);
+		}
+		element.textContent = String(current).padStart(2, '0');
+	}, 120);
+};
+
+counters.forEach(animateCounter);
+</script>
+<script src="pages.js"></script>
+</body>
+</html>
