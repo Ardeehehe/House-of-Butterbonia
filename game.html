@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>RESTRICTED SIGNAL / BLACKOUT</title>
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+<main class="game-shell">
+  <header class="game-header">
+    <a class="exit-link" href="index.html">EXIT SIGNAL</a>
+    <div class="game-mark"><span>◈</span> BLACKOUT PROTOCOL</div>
+    <div class="status">LIVE / 01</div>
+  </header>
+
+  <section class="game-frame" aria-label="Blackout survival game">
+    <div class="hud">
+      <div><span>VITALS</span><strong id="health">100</strong></div>
+      <div><span>SCORE</span><strong id="score">000000</strong></div>
+      <div><span>TIME</span><strong id="timer">60.0</strong></div>
+      <div class="fear-meter"><span>FEAR</span><i id="fear-level"></i></div>
+    </div>
+    <canvas id="arena" width="960" height="600"></canvas>
+    <div class="crosshair" id="crosshair"></div>
+    <div class="screen-noise"></div>
+    <div class="game-overlay" id="overlay">
+      <div class="eyebrow">RESTRICTED SIGNAL / BLACKOUT</div>
+      <h1>Crimson<br><span>Survival.</span></h1>
+      <p>Something is inside the room. Hold the signal for 60 seconds. Move with <b>WASD</b> or arrows. Aim and fire with the pointer or <b>SPACE</b>.</p>
+      <button class="start-button" id="start-button" type="button">Enter the blackout <span>↗</span></button>
+      <small>Audio begins after entry. Headphones recommended.</small>
+    </div>
+    <div class="game-over" id="game-over" hidden>
+      <div class="eyebrow" id="result-label">SIGNAL LOST</div>
+      <h2 id="result-title">The room won.</h2>
+      <p id="result-copy">Your signal was swallowed by the dark.</p>
+      <button class="start-button" id="restart-button" type="button">Run it back <span>↗</span></button>
+    </div>
+    <div class="jumpscare" id="jumpscare" hidden aria-hidden="true">
+      <div class="jumpscare-face"><i></i><i></i><b></b><em></em></div>
+      <strong>FOUND YOU</strong>
+    </div>
+    <div class="touch-controls" aria-label="Touch controls">
+      <div class="touch-pad" id="touch-pad"><i></i></div>
+      <button type="button" id="touch-fire">FIRE</button>
+    </div>
+  </section>
+
+  <p class="game-footer">A HOUSE OF BUTTERBONIA EASTER EGG <span>///</span> DO NOT SHARE THE SIGNAL</p>
+</main>
+<script>
+if (sessionStorage.getItem('butterboniaAccess') !== 'granted') location.replace('loading.html');
+</script>
+<script src="game.js"></script>
+</body>
+</html>
